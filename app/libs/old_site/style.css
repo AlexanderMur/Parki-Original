@@ -1,0 +1,1028 @@
+@charset "utf-8";
+html {
+    text-size-adjust:100%;
+}
+a {
+    text-decoration:none;
+}
+h1, h2, h3, h4, h5{
+    font-weight:normal;
+}
+img{
+    border:none;
+    max-width: 100%;
+    height:auto;
+}
+a,button{
+    outline: none;
+    cursor:pointer;
+}
+li{
+    list-style:none;
+}
+button{
+    background:none;
+    border:none;
+}
+a, button, input, i, textarea{
+    -webkit-appearance: none;
+    -webkit-transition:  all 0.5s ease;
+    -moz-transition:  all 0.5s ease;
+    -o-transition:  all 0.5s ease;
+    transition:  all 0.5s ease;
+}
+* {
+    position: relative;
+    margin:0;
+    padding:0;
+    word-wrap: break-word;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input, textarea, button{
+    display: block;
+}
+a, span, i{
+    display: inline-block;
+}
+
+/****** input,textarea ******/
+
+textarea{
+    resize:none;
+    outline:none;
+    border:none;
+    overflow:auto;
+    -webkit-appearance:none;
+    border-radius:0;
+    font-family: 'Open Sans', sans-serif;
+}
+input{
+    outline:none;
+    border:none;
+    -webkit-appearance:none;
+    border-radius:0;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type='number']{
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+}
+input[type="submit"]{
+    cursor:pointer;
+    -webkit-appearance:none;
+}
+input[type="search"]::-webkit-search-cancel-button{
+    background:none;
+    display:none;
+}
+
+input:focus::-webkit-input-placeholder {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+input:focus::-moz-placeholder          {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+input:focus:-moz-placeholder           {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+input:focus:-ms-input-placeholder      {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+
+textarea:focus::-webkit-input-placeholder {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+textarea:focus::-moz-placeholder          {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+textarea:focus:-moz-placeholder           {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+textarea:focus:-ms-input-placeholder      {color: transparent; -webkit-transition:all 0.5s ease; -o-transition:all 0.5s ease; -moz-transition:all 0.5s ease; transition:  all 0.5s ease;}
+
+input::-webkit-input-placeholder {color:#fff;}
+input::-moz-placeholder          {color:#fff;}
+input:-moz-placeholder           {color:#fff;}
+input:-ms-input-placeholder      {color:#fff;}
+
+textarea::-webkit-input-placeholder {color:#8f8f8f;}
+textarea::-moz-placeholder          {color:#8f8f8f;}
+textarea :-moz-placeholder           {color:#8f8f8f;}
+textarea:-ms-input-placeholder      {color:#8f8f8f;}
+
+/********sait***********/
+
+
+
+@font-face {
+    font-family: 'PF DinDisplay thin';
+    src: url('fonts/PFDinDisplayPro-Thin.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.eot*/;
+    src: url('fonts/PFDinDisplayPro-Thin.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFDinDisplayPro-Thin.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.woff2*/ format('woff2'),
+        url('fonts/PFDinDisplayPro-Thin.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.woff*/ format('woff'),
+        url('fonts/PFDinDisplayPro-Thin.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.ttf*/ format('truetype'),
+        url('fonts/PFDinDisplayPro-Thin.svg#PFDinDisplayPro-Thin')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Thin.svg#PFDinDisplayPro-Thin*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinDisplay light';
+    src: url('fonts/PFDinDisplayPro-Light.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.eot*/;
+    src: url('fonts/PFDinDisplayPro-Light.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFDinDisplayPro-Light.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.woff2*/ format('woff2'),
+        url('fonts/PFDinDisplayPro-Light.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.woff*/ format('woff'),
+        url('fonts/PFDinDisplayPro-Light.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.ttf*/ format('truetype'),
+        url('fonts/PFDinDisplayPro-Light.svg#PFDinDisplayPro-Light')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Light.svg#PFDinDisplayPro-Light*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinDisplay Regular';
+    src: url('fonts/PFDinDisplayPro-Regular.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.eot*/;
+    src: url('fonts/PFDinDisplayPro-Regular.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFDinDisplayPro-Regular.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.woff2*/ format('woff2'),
+        url('fonts/PFDinDisplayPro-Regular.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.woff*/ format('woff'),
+        url('fonts/PFDinDisplayPro-Regular.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.ttf*/ format('truetype'),
+        url('fonts/PFDinDisplayPro-Regular.svg#PFDinDisplayPro-Regular')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Regular.svg#PFDinDisplayPro-Regular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinDisplay Med';
+    src: url('fonts/PFDinDisplayPro-Medium.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.eot*/;
+    src: url('fonts/PFDinDisplayPro-Medium.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFDinDisplayPro-Medium.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.woff2*/ format('woff2'),
+        url('fonts/PFDinDisplayPro-Medium.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.woff*/ format('woff'),
+        url('fonts/PFDinDisplayPro-Medium.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.ttf*/ format('truetype'),
+        url('fonts/PFDinDisplayPro-Medium.svg#PFDinDisplayPro-Medium')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Medium.svg#PFDinDisplayPro-Medium*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinDisplay Bold';
+    src: url('fonts/PFDinDisplayPro-Bold.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.eot*/;
+    src: url('fonts/PFDinDisplayPro-Bold.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFDinDisplayPro-Bold.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.woff2*/ format('woff2'),
+        url('fonts/PFDinDisplayPro-Bold.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.woff*/ format('woff'),
+        url('fonts/PFDinDisplayPro-Bold.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.ttf*/ format('truetype'),
+        url('fonts/PFDinDisplayPro-Bold.svg#PFDinDisplayPro-Bold')/*tpa=http://html.devcodelab.com/parki/fonts/PFDinDisplayPro-Bold.svg#PFDinDisplayPro-Bold*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Reg';
+    src: url('fonts/PFAgoraSerifPro-Regular.eot')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.eot*/;
+    src: url('fonts/PFAgoraSerifPro-Regular.eot-#iefix')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.eot?#iefix*/ format('embedded-opentype'),
+        url('fonts/PFAgoraSerifPro-Regular.woff2')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.woff2*/ format('woff2'),
+        url('fonts/PFAgoraSerifPro-Regular.woff')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.woff*/ format('woff'),
+        url('fonts/PFAgoraSerifPro-Regular.ttf')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.ttf*/ format('truetype'),
+        url('fonts/PFAgoraSerifPro-Regular.svg#PFAgoraSerifPro-Regular')/*tpa=http://html.devcodelab.com/parki/fonts/PFAgoraSerifPro-Regular.svg#PFAgoraSerifPro-Regular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.container{
+    width:1325px;
+    margin:0 auto;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'PF DinDisplay Regular';
+}
+
+.clear:after, .container:after{
+    content:'';
+    clear:both;
+    display:block;
+}
+.header{
+    padding: 10px 0 12px 0;
+}
+.logo{
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+.logo a {
+    height: auto;
+    width: 160px;
+}
+.logo p:last-of-type {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+nav{
+    width: 437px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-left: 130px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    visibility: hidden;
+    background-color: #000;
+    -webkit-transition: all .1s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+nav ul li a:hover{
+    -webkit-transition: all .1s ease;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.adress{
+	width: 280px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-left: 90px;
+}
+.adress p{
+    font-size: 17px;
+    color: #000;
+    text-transform: uppercase;
+    
+}
+.adress p span{
+    color: #685fd6;
+    font-family: 'PF DinDisplay Bold';
+}
+.tel{
+    width: 158px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-left: 38px;
+}
+.tel a{
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    text-align: right;
+}
+.tel a:after{
+    content: '';
+    height: 31px;
+    width: 31px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+.tel a:hover{
+    transform: translateY(-3px);
+}
+.block1{
+    height: 830px;
+/*    background: url(img/../img/slider.png) no-repeat top center, #d5d9dd;*/
+    overflow: hidden;
+}
+.size_of{
+    text-align: center;
+    width: 190px;
+    margin: 5px auto 0 auto;
+    font-size: 13px;
+    display: block;
+    color: #848484;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block2{
+    padding: 30px 0 20px 0;
+}
+.wrap_advantages{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.advantage{
+    width: 309px;
+    
+}
+.advantage:hover .adv_img{
+    transform: translateY(-8px);
+}
+.adv_img{
+    width: 66px;
+    height: 66px;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.adv_text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 218px;
+    margin-left: 20px;
+}
+.adv_text p:first-of-type{
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 6px;
+}
+.adv_text p:last-of-type{
+    font-size: 16px;
+    color: #000;
+    font-family: 'PF DinDisplay light';
+}
+.block3{
+    padding-top: 62px;
+    background: #ebebeb;
+    padding-bottom: 100px;
+}
+.wrap_recommemded{
+    width: 410px;
+    margin-left: 83px;
+}
+h3{
+    font-size: 36px;
+    color: #000;
+    
+}
+.wrap_recommemded p{
+    font-size: 18px;
+    color: #000;
+    margin-top: 22px;
+}
+.wrap_stars{
+    margin-top: 85px;
+    padding-left: 65px;
+}
+.original{
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    left: -45px;
+    top: 45px;
+    transform: rotate(-90deg);
+}
+.stars{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.star{
+    width: 400px;
+    
+}
+.star_img{
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.5);
+}
+.star a{
+    margin-top: 25px;
+    font-size: 13px;
+    color: #000;
+    padding-left: 27px;
+    text-transform: uppercase;
+}
+.star a:after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(img/insta.png)/*tpa=http://html.devcodelab.com/parki/img/insta.png*/ no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+.star a:hover{
+    transform: translateY(-5px);
+}
+.stars .star:nth-child(2){
+    margin-top: 85px;
+}
+.block4{
+    padding-top: 60px;
+    background: #ebebeb;
+    padding-bottom: 70px;
+}
+.block4 h3{
+    font-family: 'PF Agora Serif Reg';
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+.block4 .container>p{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #8c8888;
+    margin-top: 5px;
+}
+.wrap_goods{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.goods{
+    width: 423px;
+    background: #fff;
+    min-height: 820px;
+    margin-bottom: 30px;
+}
+.good_img{
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+.swiper-slide img{
+    width: 100%;
+    /*min-height: 100%;*/
+    object-fit: cover;
+}
+.swiper-pagination{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.swiper-pagination-bullet{
+    margin: 0 5px;
+}
+.swiper-pagination-bullet-active{
+    background: #000;
+}
+
+.good_img .swiper-button-prev,
+.swiper-button-next{
+    display: none
+}
+.goods:hover .swiper-button-prev{
+    display: block;
+}
+.goods:hover .swiper-button-next{
+    display: block;
+}
+.good_text{
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 46px 15px 46px;
+}
+.good_names{
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.good_names p{
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+}
+.wrap_prices{
+    width: 190px;
+    margin: 25px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.wrap_prices .show_price{
+
+    font-size: 22px;
+    color: #685fd6;
+    font-family: 'PF DinDisplay Med';
+}
+.wrap_prices .old_price{
+
+    font-size: 17px;
+    color: #707070;
+}
+.wrap_prices .old_price:after{
+    content: '';
+    width: 67px;
+    height: 1px;
+    background: #fa6d6d;
+    transform: rotate(-14deg);
+    position: absolute;
+    top: 10px;
+    right: -5px;
+}
+.good_text a{
+    width: 235px;
+    height: 55px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid transparent;
+    background: #685fd6;
+    margin: 20px auto 0 auto;
+}
+.good_text a:hover{
+    background: none;
+    border-color: #685fd6;
+    color: #685fd6;
+    
+}
+.block5{
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+.block5 h3{
+    text-align: center;
+}
+.wrap_order{
+    margin: 90px auto 0 auto;
+    width: 530px;
+    padding-left: 55px;
+}
+.order>p{
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
+.order{
+    padding-bottom: 60px;
+}
+.order:after{
+    content: '';
+    height: 69%;
+    width: 1px;
+    background: #000;
+    position: absolute;
+    left: -55px;
+    top: 55px;
+}
+.tells{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tells a{
+    font-size: 22px;
+    color: #000;
+}
+.order>a{
+    width: 278px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #685fd6;
+    border: 2px solid transparent;
+    margin-top: 35px;
+}
+.order>a:hover{
+    background: none;
+    color: #685fd6;
+    border-color: #685fd6;
+}
+.wrap_order .order:last-child:after{
+    display: none;
+}
+.order>span{
+    font-size: 16px;
+    color: #484848;
+    display: block;
+    
+}
+.order .numbers{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #685fd6;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -85px;
+    top: -15px;
+}
+.block6{
+    background: url(img/zakas.png)/*tpa=http://html.devcodelab.com/parki/img/zakas.png*/ no-repeat top center;
+    background-size: cover;
+    padding: 62px 0;
+}
+.questions{
+    width: 505px;
+    float: left;
+    margin-left: 60px;
+}
+.questions p:first-of-type{
+    font-size: 32px;
+    color: #fff;
+    padding-bottom: 13px;
+}
+.questions p:last-of-type{
+    font-size: 18px;
+    color: #fff;
+}
+.wrap_form1{
+    width: 545px;
+    float: right;
+    margin-top: 10px;
+}
+.inputs1{
+    width: 330px;
+    height: 55px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'PF DinDisplay Regular';
+}
+.submits1{
+    width: 200px;
+    height: 55px;
+    background: #fff;
+    border: 1px solid transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'PF DinDisplay Regular';
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    color: #000;
+}
+.submits1:hover{
+    background: none;
+    color: #fff;
+    border-color: #fff;
+}
+.block7{
+    padding-top: 50px;
+    background: #d6d8dc;
+}
+.wrap_transporters{
+    width: 570px;
+    float: left;
+    margin-top: 55px;
+    margin-left: 60px;
+}
+h4{
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 50px;
+}
+.wrap_transporters p{
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 18px;
+}
+.woman{
+    width: 480px;
+    height: 649px;
+    float: right;
+    margin-right: 150px;
+}
+.block8{
+    display: flex;
+}
+.contacts_left{
+    width: 51%;
+    padding-bottom: 30px;
+}
+.our_photo{
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.our_photo img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.contacts_under{
+    width: 345px;
+    margin: 70px auto 0 auto
+}
+.contacts_under p{
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 25px;
+}
+.contacts_under p span{
+    font-family: 'PF DinDisplay Bold';
+}
+.contacts_under>a{
+    font-size: 22px;
+    color: #000;
+}
+.contacts_under>a>span{
+    font-family: 'PF DinDisplay Bold';
+}
+
+.map_right{
+	    width: 49%;
+    height: 520px;
+	    background-image: url(img/maps.png);
+    background-position: center center;
+    width: 49%;
+    height: 600px;
+}
+.contacts_under>a:hover{
+    text-decoration: underline;
+}
+.socials{
+    width: 140px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.socials a{
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+}
+.socials a:hover{
+    transform: translateY(-5px);
+}
+.swiper-container{
+    height: 568px;
+}
+.modal_big{
+    display: none;
+    width: 795px;
+    height: 555px;
+    background: #fff;
+    padding: 50px;
+}
+.modal_big h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.modal_big p{
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.imput_style{
+    width: 300px;
+    height: 55px;
+    border: 1px solid #363636;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'PF DinDisplay Regular';
+    color: #000;
+    margin: 0 auto 30px auto;
+}
+.submit_style{
+    width: 235px;
+    height: 55px;
+    background: #685fd6;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'PF DinDisplay Regular';
+    border: 1px solid transparent;
+    margin: 0 auto;
+}
+.submit_style:hover{
+    background: none;
+    border-color: #685fd6;
+    color: #685fd6;
+}
+.imput_style::-webkit-input-placeholder {color:#000;}
+.imput_style::-moz-placeholder          {color:#000;}
+.imput_style:-moz-placeholder           {color:#000;}
+.imput_style:-ms-input-placeholder      {color:#000;}
+
+
+.modal_big2{
+    display: none;
+    width: 1150px;
+    min-height: 900px;
+    background: #fff;
+    padding: 40px 80px;
+}
+.modal_big2 h3{
+    margin-bottom: 60px;
+}
+.deliveries{
+    padding-bottom: 50px;
+    margin-left: 55px;
+}
+h5{
+    font-size: 16px;
+    color: #000;
+    font-family: 'PF DinDisplay Bold';
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.deliveries span{
+    height: 42px;
+    width: 42px;
+    background: #685fd6;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -60px;
+    top: -12px;
+    font-size: 24px;
+}
+.deliveries p{
+    font-size: 16px;
+    color: #000;
+}
+.wrap_deliveries .deliveries:last-child{
+    border-bottom: 1px solid #000;
+}
+.wrap_deliveries .deliveries:last-child p:first-of-type{
+    margin-bottom: 20px;
+}
+.wrap_deliveries .deliveries:last-child h5{
+    margin-bottom: 0;
+}
+.wrap_details{
+    margin-top: 35px;
+    margin-left: 60px;
+}
+.wrap_details p{
+    font-size: 14px;
+     color: #000;
+}
+.wrap_details p:first-child{
+    margin-bottom: 15px;
+}
+.block1 .swiper-container2{
+    height: 100%;
+}
+.block1 .swiper-container2 .swiper-slide{
+    padding-top: 185px;
+}
+.wrap_name_slide{
+    width: 400px;
+}
+.wrap_name_slide p{
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    color: #aaaeb1;
+    margin-bottom: 25px;
+}
+h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+}
+.wrap_name_slide a{
+    font-size: 25px;
+    color: #000;
+    
+}
+.wrap_name_slide a:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.wrap_name_slide a:hover:after{
+    display: none;
+}
+.wrapper_social{
+    width: 140px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: -300px;
+}
+.wrapper_social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    height: 62px;
+    width: 62px;
+    float: right;
+    background: url(img/menu.png)/*tpa=http://html.devcodelab.com/parki/img/menu.png*/ no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+.logos2{
+    width: 293px;
+    height: 69px;
+    display: none;
+}
+.wrap_mob_nav{
+    display: none;
+}
+.overlay {
+    visibility: hidden;
+    transition: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+}
+.modal_big3{
+    width: 600px;
+    height: 400px; 
+    background: #fff;
+    padding: 30px
+}
+.modal_big3 h3{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.modal_big3 p{
+    text-align: center;
+    font-size: 24px;
+    
+}
+*.error{border-color: red;}

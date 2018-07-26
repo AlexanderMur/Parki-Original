@@ -1,0 +1,486 @@
+@media (max-width:1355px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .block1 .container{
+        padding: 0;
+    }
+    nav{
+        margin-left: 90px;
+    }
+    .wrap_name_slide{
+        padding-left: 15px;
+    }
+}
+@media (max-width:1300px){
+    .stars{
+        justify-content: space-around;
+    }
+    .star{
+        margin-bottom: 30px;
+    }
+    .stars .star:nth-child(2){
+        margin-top: 0;
+    }
+    .woman{
+        width: auto;
+        height: auto;
+        margin-right: 0;
+    }
+    .wrap_transporters{
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    .modal_big{
+        width: 80%;
+    }
+    .modal_big2{
+        width: 80%;
+    }
+}
+@media (max-width:1270px){
+    nav{
+        margin-left: 30px;
+    }
+    .adress{
+        margin-left: 50px;
+    }
+    .wrap_advantages{
+        justify-content: space-around;
+    }
+    .advantage{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:1130px){
+    nav{
+        width: 330px;
+    }
+    .adress{
+        margin-left: 30px;
+    }
+    .tel{
+        margin-left: 30px;
+    }
+    @media (max-width:1130px){
+        .questions{
+            float: none;
+            margin: 0 auto 30px auto;
+        }
+        .wrap_form1{
+            float: none;
+            margin: 0 auto;
+        }
+
+    }
+}
+@media (max-width:1050px){
+    .tel{
+        margin-left: 15px;
+    }
+    nav{
+        margin-left: 15px;
+    }
+}
+@media (max-width:1015px){
+    nav{
+        display: none;
+    }
+    .adress{
+        display: none;
+    }
+    .tel{
+        display: none;
+    }
+    .logo{
+        float: left;
+    }
+    .menu{
+        display: block;
+        margin-top: 5px;
+    }
+    .logo{
+        display: none;
+    }
+    .logos2{
+        display: block;
+        float: left;
+    }
+    .header{
+        background: #d5d9dd;
+    }
+    .wrapper.open{
+        overflow: hidden;
+    }
+
+    .pull{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .open .wrap_mob_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        float: none;
+        width: 600px;
+        background: #fff;
+        transform: translateX(0);
+        transition-duration: 0.6s;
+        padding: 15px;
+        overflow: auto;
+    }
+
+    .open .overlay{
+        visibility: visible;
+        z-index: 90;
+    }
+    .wrap_mob_nav .logo{
+        display: block;
+    }
+    .open ul{
+        display: block;
+        margin-top: 150px;
+    }
+    .open ul li{
+        margin-bottom: 30px;
+    }
+    .open ul li a{
+        color: #000;
+        font-size: 34px;
+    }
+    .open .wrap_mob_nav .adress{
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+    .open .wrap_mob_nav .tel{
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+    .open .wrap_mob_nav .adress p{
+        font-size: 22px;
+        margin-top: 150px;
+        margin-bottom: 40px;
+    }
+    .open .wrap_mob_nav .tel a{
+        font-size: 22px;
+        text-align: left;
+    }
+    .open .wrap_mob_nav .tel a:after{
+        display: none;
+    }
+    .wrap_mob_nav .wrapper_social{
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 30px;
+    }
+    .block8{
+        display: block;
+    }
+    .contacts_left{
+        width: 100%;
+    }
+    .map_right{
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .open .wrap_mob_nav{
+        width: 80%;
+    }
+
+    .original{
+        transform: rotate(0);
+        left: 50%;
+        margin-left: -160px;
+        top: -35px;
+    }
+    .goods{
+        width: 320px;
+    }
+    .good_img{
+        height: 480px;
+    }
+    .block3{
+        padding-bottom: 0px;
+    }
+    .goods{
+        min-height: 650px;
+    }
+    .good_names p{
+        font-size: 20px;
+    }
+    .swiper-container2 .swiper-slide{
+        background-size: 850px auto !important;
+        background-position: auto !important;
+        background-repeat: no-repeat !important;
+    }
+    .block1 .swiper-container2 .swiper-slide{
+        padding-top: 30px;
+    }
+    .block1{
+        height: 430px;
+    }
+    h1{
+        font-size: 43px;
+    }
+    .wrap_name_slide p{
+        font-size: 30px;
+    }
+    .modal_big h3{
+        font-size: 31px;
+    }
+    .modal_big p{
+        font-size: 20px;
+    }
+}
+@media (max-width:600px){
+    .wrap_order{
+        width: calc( 100% - 30px);
+        margin-left: 30px;
+    }
+    .wrap_form1{
+        width: 100%;
+    }
+    .inputs1{
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    .submits1{
+        display: block;
+        margin: 0 auto;
+    }
+    .wrap_transporters{
+        width: 100%;
+    }
+    .wrap_stars{
+        padding-left: 0;
+    }
+}
+
+@media (max-width:560px){
+    .menu{
+        width: 40px;
+        height: 40px;
+    }
+    .open ul li a{
+        font-size: 23px;
+    }
+    .open .wrap_mob_nav .adress p{
+        margin-top: 50px;
+        font-size: 17px;
+    }
+    .open .wrap_mob_nav .tel a{
+        font-size: 17px;
+    }
+    .logos2{
+        width: 180px;
+        height: 50px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .block1 .wrapper_social{
+        display: none;
+    }
+    .questions{
+        width: 100%;
+    }
+    .tells{
+        display: block;
+    }
+    .tells a{
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
+    .wrap_recommemded{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width:500px){
+    .wrap_name_slide{
+        width: 100%;
+        padding-right: 15px;
+    }
+    .order>a{
+        width: 200px;
+        font-size: 12px;
+    }
+    .block4{
+        padding-bottom: 10px;
+    }
+    .block3{
+        padding-top: 30px;
+    }
+    .map_right{
+        height: 400px;
+    }
+    .good_text a{
+        width: 190px;
+    }
+    .imput_style{
+        width: 240px;
+    }
+    .modal_big{
+        padding: 15px;
+        width: 90%;
+    }
+    .modal_big2{
+        padding: 15px;
+        width: 90%;
+    }
+
+}
+@media (max-width:430px){
+    .star{
+        width: 100%;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .order{
+        padding-bottom: 20px;
+    }
+    .tells{
+        margin-top: 0;
+    }
+    .order>p{
+        font-size: 19px;
+    }
+    .tells a{
+        font-size: 19px;
+    }
+    .block4 h3{
+        font-size: 35px;
+    }
+    .block1 .swiper-container2 .swiper-slide{
+        padding-top: 20px;
+    }
+    .block1{
+        height: 315px;
+    }
+    .swiper-container2 .swiper-slide{
+        background-size: 550px auto !important;
+
+    }
+    h1{
+        font-size: 25px;
+    }
+    .wrap_name_slide p{
+        font-size: 20px;
+        text-align: left;
+    }
+    .modal_big{
+        height: 500px;
+        position:absolute;
+        left:5%;
+    }
+    .modal_big p{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .modal_big h3{
+        font-size: 27px;
+    }
+
+    .open ul{
+        margin-top: 130px;
+    }
+    .wrap_order .order:first-child:after{
+        height: 75%;
+    }
+    .open .wrap_mob_nav .adress p{
+        font-size: 15px;
+    }
+    .socials{
+        width: 100%;
+        padding: 0 20px
+    }
+    .contacts_under p{
+        text-align: center;
+    }
+    .contacts_under>a{
+        text-align: center;
+        display: block;
+    }
+    .deliveries{
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .modal_big2 h3{
+        margin-bottom: 35px;
+    }
+    .deliveries p{
+        font-size: 13px;
+    }
+    .modal_big3{
+        width: 90%;
+    }
+}
+
+@media (max-width:400px){
+    .advantage{
+        width: 290px;
+    }
+    .adv_text{
+        width: 200px;
+    }
+
+    .goods{
+        width: 290px;
+    }
+    .inputs1{
+        width: 290px;
+    }
+    .our_photo{
+        width: 100%;
+    }
+    .contacts_under{
+        width: 100%;
+        margin: 20px 0 0 0;
+        padding: 0 15px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .original{
+        margin-left: -130px;
+    }
+    .contacts_under p{
+        font-size: 20px;
+    }
+    .contacts_under>a{
+        font-size: 20px;
+    }
+    .wrap_name_slide a{
+        font-size: 18px;
+    }
+}
+@media (max-width:360px){
+    .swiper-container2 .swiper-slide {
+        background-size: 500px auto !important;
+    }
+    .block1{
+        height: 285px;
+    }
+    h1{
+        font-size: 23px;
+    }
+    .open .wrap_mob_nav .adress p{
+        font-size: 13px;
+    }
+    .block4{
+        padding-top: 20px;
+    }
+}

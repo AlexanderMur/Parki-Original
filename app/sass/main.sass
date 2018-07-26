@@ -1,0 +1,78 @@
+@import "_mixins/_utils"
+@import "vars"
+@import "libs"
+
+.loadMore
+  &.hidden
+    display: none
+  &:hover
+    background-color: white
+    color: black
+  &[disabled]
+    opacity: 0.6
+
+#anchor1
+  .filters
+    box-shadow: 0px 10px 15px 0 rgba(40,40,40,.2)
+    background-color: #ebebeb
+    &.fixed
+      position: fixed
+      width: inherit
+    &.absolute
+      width: 100%
+      position: absolute
+    z-index: 999
+    font-size: 22px
+    position: absolute
+    li
+      display: inline-block
+    a
+      color: black
+      font-size: 22px
+      padding: 10px
+  .menu-toggle
+    float: none
+    margin: 5px auto
+    padding: 31px
+    background-image: url(img/menu.png)
+    display: none
+  .wrap_goods
+    transition: 0.5s
+    margin-top: 107px
+  &.loading
+    .wrap_goods
+      opacity: 0.6
+.center
+  text-align: center
+
+a.active_term
+  text-decoration: underline
+
+.stars .star, .stars .star:nth-child(2)
+  margin-bottom: 20px
+  margin-top: 0
+
+.modal_small
+  background-color: #ebebeb
+  display: none
+  a
+    color: #000
+    padding: 5px 0
+
+.header
+  width: 100% !important
+  z-index: 15
+  background-color: white
+  position: fixed
+  + *
+    padding-top: 69px
+/* For aesthetics only ------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@import "../libs/old_site/media_old"
+@import "media"
